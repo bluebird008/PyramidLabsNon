@@ -1573,10 +1573,6 @@ small {
 }
 /* custom css by Sajjan Nehal (Fast Creatorz)*/
 /* dashboard */
-.navbar-fixed-top{
-    background-color: #090808 !important;
-    border-color: #090808;
-}
 .navbar-fixed-top a .fa{
     color: #00FE5A;
 }
@@ -1605,12 +1601,8 @@ small {
 #wrapper {
     background-color: #00FE5A !important;
 }
-body.min #page-wrapper {
-    background-color: #434343;
-}
 body{
     color:#00FE5A !important;
-    background-color: #434343 !important;
 }
 .btn-primary, .btn-primary.focus, .btn-primary:focus {
     color: #fff;
@@ -1624,7 +1616,6 @@ body{
     border: 2px solid #00FE5A !important;
     border-radius: 5px !important;
     color: #00FF24 !important;
-    background-color: #302E2F !important;
 }
 .form-control::placeholder {
     color: #00FE5A;
@@ -1653,46 +1644,34 @@ body{
 .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
     max-height: 100% !important;
 }
-.panel-footer {
-    background-color: #090808 !important;
-    border-top: 1px solid #090808 !important;
-}
-.panel-body {
-    background-color: #302E2F;
-}
 .panel-default > .panel-heading {
     color: #090808 !important;
     background-color: #00FE5A;
     border-color: #00FE5A;
 }
-.secondary-color , .panel-red > .panel-heading, .panel-green > .panel-heading, .panel-yellow > .panel-heading {
-    color: #00FE5A !important;
-}
+/*.secondary-color , .panel-red > .panel-heading, .panel-green > .panel-heading, .panel-yellow > .panel-heading {*/
+    /*color: #00FE5A !important;*/
+/*}*/
 .panel, .panel-heading{
     border-top-left-radius: 5px !important;
     border-top-right-radius: 5px !important;
 }
 .secondary-color, .secondary-color> .panel-heading{
     border-color: #00FE5A;
-    background-color: #302E2F;
 
 }
 .panel-green, .panel-green > .panel-heading {
     border-color: #00FE5A;
-    background-color: #302E2F;
 }
 
 .panel-red, .panel-red > .panel-heading {
     border-color: #00FE5A;
-    background-color: #302E2F;
 }
 .panel-yellow, .panel-yellow > .panel-heading {
     border-color: #00FE5A;
-    background-color: #302E2F;
 }
 #page-wrapper {
     border:none !important;
-    background-color: #434343 !important;
 }
 
 .panel-default{
@@ -1706,14 +1685,11 @@ body{
 }
 .footer {
     color: #00FE5A !important;
-    background-color: #090808 !important;
-    border-top: 1px solid #090808 !important;
 }
 .ip-address-box .form-control{
     width: 100% !important;
 }
 .modal-content {
-    background-color:  #434343 !important;
     border: 1px solid #00FE5A !important;
 }
 .modal-enabled{
@@ -1804,9 +1780,6 @@ input:checked + .slider:before {
 
 
 /* product type list */
-#product_types, .panel{
-    background-color: #090808 !important;
-}
 #product_types a, .panel a{
     color: #00FE5A !important;
 }

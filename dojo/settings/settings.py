@@ -47,13 +47,13 @@ ADMINS = (
 
 MANAGERS = ADMINS
 
-DOJO_ROOT = '/home/kali/PyramidLabs/dojo'
+DOJO_ROOT = '/home/kali/PyramidLabsNon/dojo'
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         # 'django.db.backends.mysql','django.db.backends.sqlite3' or 'django.db.backends.oracle'.
-        'NAME': 'pyramidlabs',  # Or path to database file if using sqlite3.
+        'NAME': 'pyramidlabsnon',  # Or path to database file if using sqlite3.
         # The following settings are not used with sqlite3:
         'USER': 'root',
         'PASSWORD': 'Cellone3g',
@@ -92,7 +92,7 @@ USE_TZ = True
 
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 # Example: "/var/www/example.com/media/"
-MEDIA_ROOT = '/home/kali/PyramidLabs/media/'
+MEDIA_ROOT = '/home/kali/PyramidLabsNon/media/'
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash.
@@ -103,7 +103,7 @@ MEDIA_URL = '/media/'
 # Don't put anything in this directory yourself; store your static files
 # in apps' "static/" subdirectories and in STATICFILES_DIRS.
 # Example: "/var/www/example.com/static/"
-STATIC_ROOT = "/home/kali/PyramidLabs/static/"
+STATIC_ROOT = "/home/kali/PyramidLabsNon/static/"
 
 # URL prefix for static files.
 # Example: "http://example.com/static/", "http://static.example.com/"
@@ -130,7 +130,7 @@ FILE_UPLOAD_HANDLERS = (
 )
 
 # Make this unique, and don't share it with anybody.
-SECRET_KEY = 'ycgDMd28rfDqYs3uULdkmQSxTJeU2WPY5pySBz8gRkw8o4JU6ngQioNlc5lOcJ9iw5BRyJjEs53NHahcwuUIwAt9k125NUsMtqej0zt2LB0gAOzOXcAaT9eEpQaIGfpa'
+SECRET_KEY = 'jyp4GNcpxSokguzM71TKdwpIyXxlUqTz0I1kgHCkzzh1i7bTXYtGiuNqh1UkRg79Yh53Xcz20vLGjl6YKhGFJaIq7jqwV4BeOWNMWrdRLO51SYHdcURBk26LKqqsq91B'
 
 MIDDLEWARE_CLASSES = (
     'django.middleware.common.CommonMiddleware',
