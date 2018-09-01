@@ -1762,7 +1762,6 @@ input:checked + .slider:before {
 
 /* add products page */
 .breadcrumb, .editor-toolbar{
-    background-color: #090808 !important;
     border-color: #00FE5A !important;
 
 }
@@ -1770,7 +1769,6 @@ input:checked + .slider:before {
     color: #00FE5A !important;
 }
 .chosen-container-multi .chosen-choices{
-    background-color: #302E2F !important;
     border: 1px solid #00FE5A !important;
 }
 .chosen-container-multi .chosen-choices .search-field .default, .chosen-container-multi .chosen-choices .search-field .default::placeholder {
@@ -1787,9 +1785,6 @@ input:checked + .slider:before {
     border-color: #00FE5A !important;
 }
 
-.table-striped > tbody > tr:nth-of-type(2n+1) {
-    background-color: #302E2F !important;
-}
 #product_types .btn-success {
     color: #090808 !important;
     background-color: #00FE5A !important;
@@ -1800,9 +1795,7 @@ input:checked + .slider:before {
 }
 
 /* Active Engagements  */
-#the-filters {
-    background-color: #302E2F !important;
-}
+
 
 /* tests */
 .table-bordered th , .table-bordered th a{
@@ -1812,6 +1805,5 @@ input:checked + .slider:before {
 
 /* profile */
 .well {
-    background-color: #302E2F !important;
     border: 1px solid #00FE5A !important;
 }
