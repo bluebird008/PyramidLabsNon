@@ -61,7 +61,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="{% url 'home' %}">
-                    <img src="{% static "dojo/img/logo.png" %}" alt="DefectDojo Logo" width="240"/>
+                    <img src="{% static "dojo/img/logo.png" %}" alt="Pyramid Labs Logo" width="240"/>
                 </a>
 
             </div>
@@ -293,7 +293,7 @@
                     {{ product_tab.product }}
                     {% if system_settings.enable_benchmark == 9 %}
                       {% for benchmark in tab_benchmarks%}
-                        <sup><span class="fa fa-bookmark has-popover" data-trigger="hover" data-content="{{ benchmark|asvs_level }}"></label></span>
+                        <sup><span class="fa fa-bookmark has-popover" data-trigger="hover" data-content="{{ benchmark|asvs_level }}"></span>
                         {{ benchmark.desired_level }}</sup>
                       {% endfor %}
                     {% endif %}
@@ -499,7 +499,7 @@
                 <div class="col-md-12 text-center text-">
                     <p>
                         <a href="{% url 'home' %}"><img class="logo" src="{% static "dojo/img/chop.png" %}"
-                                                        alt="DefectDojo Chop" height="45"/></a><br/>
+                                                        alt="Pyramid Labs Chop" height="45"/></a><br/>
                         {% dojo_version %}
                     </p>
                     <p>

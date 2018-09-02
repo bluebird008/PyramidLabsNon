@@ -92,6 +92,7 @@ def api_v2_key(request):
                    'form': form,
                    })
 
+
 # #  user specific
 
 def logout_view(request):
@@ -116,11 +117,12 @@ def alerts(request):
     alert_title = "Alerts"
     if request.user.get_full_name():
         alert_title += " for " + request.user.get_full_name()
-        
+
     add_breadcrumb(title=alert_title, top_level=True, request=request)
     return render(request,
                   'dojo/alerts.html',
                   {'alerts': paged_alerts})
+
 
 def alerts_json(request, limit=None):
     limit = request.GET.get('limit')
@@ -133,7 +135,7 @@ def alerts_json(request, limit=None):
 
 def alertcount(request):
     count = Alerts.objects.filter(user_id=request.user).count()
-    return JsonResponse({'count':count})
+    return JsonResponse({'count': count})
 
 
 def view_profile(request):

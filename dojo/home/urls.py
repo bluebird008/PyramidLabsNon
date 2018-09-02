@@ -4,7 +4,6 @@ from dojo.home import views
 
 urlpatterns = [
     #  dojo home pages
-    url(r'^index', views.index, name='index'),
     url(r'^$', views.home, name='home'),
     url(r'^dashboard$', views.dashboard, name='dashboard'),
 ]
