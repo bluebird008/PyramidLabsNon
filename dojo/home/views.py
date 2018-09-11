@@ -18,9 +18,7 @@ logger = logging.getLogger(__name__)
 
 
 def home(request):
-    if request.user.is_authenticated() and request.user.is_staff:
-        return render(request, 'dojo/index.html')
-    return HttpResponseRedirect(reverse('login'))
+    return render(request, 'dojo/index.html')
 
 @user_passes_test(lambda u: u.is_staff)
 def dashboard(request):

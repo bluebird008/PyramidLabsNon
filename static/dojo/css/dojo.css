@@ -1568,13 +1568,18 @@ mark{
   font-weight: 700;
 }
 small {
-  font-size:12px;
-  font-weight:400;
+    font-size: 12px;
+    font-weight: 400;
 }
 /* custom css by Sajjan Nehal (Fast Creatorz)*/
 /* dashboard */
-.navbar-fixed-top a .fa{
-    color: #00FE5A;
+.navbar-fixed-top{
+    background-color: #00FE5A !important;
+    border-color: #00FE5A;
+    color: #090808 !important;
+}
+ .navbar-fixed-top a{
+    color: #090808 !important;
 }
 .nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
     background-color: #00FE5A !important;
@@ -1601,6 +1606,10 @@ small {
 #wrapper {
     background-color: #00FE5A !important;
 }
+body.min #page-wrapper {
+    background-color: #bdbbbc !important;
+}
+
 body{
     color:#00FE5A !important;
 }
@@ -1612,10 +1621,17 @@ body{
 .btn-primary .fa {
     color: #090808;
 }
+.nav .custom-search-form button{
+    background-color: #090808 !important;
+}
+.nav .custom-search-form button i{
+    color: #00FF24 !important;
+}
 .form-control, .CodeMirror, .search-field>.default{
-    border: 2px solid #00FE5A !important;
+    border: 2px solid #090808 !important;
     border-radius: 5px !important;
     color: #00FF24 !important;
+    background-color: #9b9798 !important;
 }
 .form-control::placeholder {
     color: #00FE5A;
@@ -1681,7 +1697,8 @@ body{
 }
 .panel-body{
     border-bottom-left-radius: 5px !important;
-    border-bottom-right-radius: 5px !important
+    border-bottom-right-radius: 5px !important;
+    background-color: #9b9798;
 }
 .footer {
     color: #00FE5A !important;
@@ -1759,7 +1776,48 @@ input:checked + .slider:before {
     background-color: #00FE5A;
     border-color: #fff;
 }
+.btn-green {
+    color: #090808;
+    background-color: #00FE5A;
+    border: 2px #090808 solid !important;
+    padding: 10px 20px !important;
+    border-radius: 30px !important;
+}
+.btn-yellow {
+    color: #090808;
+    background-color: #f8d172;
+    border: 2px #090808 solid !important;
+    padding: 10px 20px !important;
+    border-radius: 30px !important;
+}
+.bubble1{
+    background-color: #f3a253 !important;
+    color: #fff !important;
+    font-size: 2em;
+    border-radius: 100% !important;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+    box-shadow: 0px 0px 10px #000;
 
+}
+.bubble2{
+    background-color: #2df8f4 !important;
+    color: #000 !important;
+    font-size: 2em;
+    border-radius: 100% !important;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+    box-shadow: 0px 0px 10px #000;
+    position: relative;
+    bottom: 50px;
+
+}
 /* add products page */
 .breadcrumb, .editor-toolbar{
     border-color: #00FE5A !important;
