@@ -1790,33 +1790,62 @@ input:checked + .slider:before {
     padding: 10px 20px !important;
     border-radius: 30px !important;
 }
-.bubble1{
-    background-color: #f3a253 !important;
+/* Bubbles */
+.bubble{
     color: #fff !important;
     font-size: 2em;
     border-radius: 100% !important;
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+    box-shadow: 0px 0px 10px #000;
+}
+.bubble-1{
+    background-color: #f3a253 !important;
     height: 150px;
     width: 150px;
-    display: flex;
-    justify-content: center; /* align horizontal */
-    align-items: center; /* align vertical */
-    box-shadow: 0px 0px 10px #000;
-
 }
-.bubble2{
+.bubble-2{
     background-color: #2df8f4 !important;
     color: #000 !important;
-    font-size: 2em;
-    border-radius: 100% !important;
     height: 50px;
     width: 50px;
-    display: flex;
-    justify-content: center; /* align horizontal */
-    align-items: center; /* align vertical */
-    box-shadow: 0px 0px 10px #000;
     position: relative;
-    bottom: 50px;
-
+    bottom: 40px;
+}
+.bubble-ip{
+    background-color: #35acff !important;
+    height: 300px;
+    width: 300px;
+    margin: auto;
+    top: 20px;
+}
+.bubble-engagements{
+    background-color: #ff7900 !important;
+    height: 200px;
+    width: 200px;
+    margin: auto;
+}
+.bubble-scheduled-scan{
+    background-color: #b64295 !important;
+    height: 150px;
+    width: 150px;
+    margin: auto;
+}
+.bubble-bugs-found{
+    background-color: #ff3535 !important;
+    height: 200px;
+    width: 200px;
+    margin: auto;
+}
+.position-relative{
+    position: relative !important;
+}
+.position-absolute{
+    position: absolute !important;
+}
+.mr-top-5{
+    margin-top: 5em;
 }
 /* add products page */
 .breadcrumb, .editor-toolbar{
