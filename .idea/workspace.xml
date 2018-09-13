@@ -4,11 +4,9 @@
     <bookmark url="file://$PROJECT_DIR$/dojo/templates/dojo/index.html" line="636" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="26893c3e-7ccd-416d-a802-703c188f9b31" name="Default" comment="dashboard bubbles created and 3 bubbles remain.">
+    <list default="true" id="26893c3e-7ccd-416d-a802-703c188f9b31" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dojo/static/dojo/css/dojo.css" afterPath="$PROJECT_DIR$/dojo/static/dojo/css/dojo.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dojo/templates/dojo/dashboard.html" afterPath="$PROJECT_DIR$/dojo/templates/dojo/dashboard.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/dojo/css/dojo.css" afterPath="$PROJECT_DIR$/static/dojo/css/dojo.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -53,8 +51,8 @@
       <file leaf-file-name="dashboard.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dojo/templates/dojo/dashboard.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="117" column="14" lean-forward="true" selection-start-line="117" selection-start-column="14" selection-end-line="117" selection-end-column="14" />
+            <state relative-caret-position="293">
+              <caret line="135" column="53" lean-forward="true" selection-start-line="135" selection-start-column="53" selection-end-line="135" selection-end-column="53" />
               <folding>
                 <element signature="n#style#0;n#div#2;n#div#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#4;n#div#1;n#!!top" expanded="true" />
@@ -258,7 +256,14 @@
       <option name="project" value="LOCAL" />
       <updated>1536775595461</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="dashboard bubbles created all.">
+      <created>1536860914152</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1536860914152</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -299,7 +304,8 @@
     <MESSAGE value="index page price changed and dashboard design changed" />
     <MESSAGE value="index page price changed and dashboard design changed. logo fix size big" />
     <MESSAGE value="dashboard bubbles created and 3 bubbles remain." />
-    <option name="LAST_COMMIT_MESSAGE" value="dashboard bubbles created and 3 bubbles remain." />
+    <MESSAGE value="dashboard bubbles created all." />
+    <option name="LAST_COMMIT_MESSAGE" value="dashboard bubbles created all." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -627,8 +633,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dojo/templates/dojo/dashboard.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="117" column="14" lean-forward="true" selection-start-line="117" selection-start-column="14" selection-end-line="117" selection-end-column="14" />
+        <state relative-caret-position="293">
+          <caret line="135" column="53" lean-forward="true" selection-start-line="135" selection-start-column="53" selection-end-line="135" selection-end-column="53" />
           <folding>
             <element signature="n#style#0;n#div#2;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#4;n#div#1;n#!!top" expanded="true" />
