@@ -17,12 +17,12 @@
         <!-- /.col-lg-6 -->
         <div class="col-lg-2 col-sm-2 text-center">
             <div class="bubble bubble-1 text-uppercase">
-                <a href="">
+                <a href="#" data-toggle="modal" data-target="#bubble-1">
                     <h2>Medium <br> Risk</h2>
                 </a>
             </div>
             <div class="bubble bubble-2">
-                <a href="">
+                <a href="#" data-toggle="modal" data-target="#bubble-2">
                     <h2>?</h2>
                 </a>
             </div>
@@ -45,80 +45,53 @@
             <!-- /.form -->
         </div>
         <!-- /.col-lg-6 -->
-<!-- Modal -->
-<div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog modal-sm">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Quick scan</h4>
-        </div>
-        <div class="modal-body">
-          <p class="modal-enabled">
-            Enabled
-              &nbsp; &nbsp;
-              <label class="switch">
-                  <input type="checkbox" checked><span class="slider round"></span>
-              </label>
-              &nbsp; &nbsp;
-            Disabled
-          </p>
-          <p>When it is enabled. It is doing an autonomous quick partial scan every day at 2pm.</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-</div>
-
     </div>
     <div class="row mr-top-5 mr-botom-5">
         <div class="col-lg-12 col-sm-12 text-center text-uppercase position-relative">
             <div class="bubble bubble-ip">
-                <a href="">
+                <a href="#" data-toggle="modal" data-target="#bubble-ip">
                     <h1>IP: <br> 192.168.1.1</h1>
                 </a>
             </div>
         </div>
         <div class="col-lg-2 col-sm-2 col-sm-push-3 text-center text-uppercase position-absolute">
             <div class="bubble bubble-engagements">
-                <a href="">
+                <a href="#" data-toggle="modal" data-target="#bubble-engagements">
                     <h4><span class="fa-3x">7</span> <br> Engagements</h4>
                 </a>
             </div>
         </div>
         <div class="col-lg-2 col-sm-2 col-sm-push-5 text-center text-uppercase position-absolute" style="top:125px">
             <div class="bubble bubble-scheduled-scan">
-                <a href="">
+                <a href="#" data-toggle="modal" data-target="#bubble-scheduled-scan">
                     <h4><span class="fa-3x">1</span> <br> Scheduled Scan</h4>
                 </a>
             </div>
         </div>
         <div class="col-lg-2 col-sm-2 col-sm-push-7 text-center text-uppercase position-absolute">
             <div class="bubble bubble-bugs-found">
-                <a href="">
+                <a href="#" data-toggle="modal" data-target="#bubble-bugs-found">
                     <h4><span class="fa-3x">12</span> <br> Bugs Found</h4>
                 </a>
             </div>
         </div>
         <div class="col-lg-2 col-sm-2 col-sm-push-3 text-center text-uppercase position-absolute" style="top:500px; left: 430px">
             <div class="bubble bubble-metrics">
-                <a href="">
+                <a href="#" data-toggle="modal" data-target="#bubble-metrics">
                     <h4><span class="fa-3x">6</span> <br> Metrics</h4>
                 </a>
             </div>
         </div>
         <div class="col-lg-2 col-sm-2 col-sm-push-5 text-center text-uppercase position-absolute" style="top:575px">
             <div class="bubble bubble-reports">
-                <a href="">
+                <a href="#" data-toggle="modal" data-target="#bubble-reports">
                     <h4><span class="fa-3x">2</span> <br> Reports</h4>
                 </a>
             </div>
         </div>
         <div class="col-lg-2 col-sm-2 col-sm-push-7 text-center text-uppercase position-absolute" style="top:500px; left: 800px">
             <div class="bubble bubble-closed-bugs">
-                <a href="">
+                <a href="#" data-toggle="modal" data-target="#bubble-closed-bugs">
                     <h4><span class="fa-3x">2</span> <br> Closed Bugs</h4>
                 </a>
             </div>
@@ -172,6 +145,198 @@
             </div>
         {% endif %}
     </div>
+
+<!-- Modal of Quick Scan -->
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Quick scan</h4>
+        </div>
+        <div class="modal-body">
+          <p class="modal-enabled">
+            Enabled
+              &nbsp; &nbsp;
+              <label class="switch">
+                  <input type="checkbox" checked><span class="slider round"></span>
+              </label>
+              &nbsp; &nbsp;
+            Disabled
+          </p>
+          <p>When it is enabled. It is doing an autonomous quick partial scan every day at 2pm.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+</div>
+
+<!-- Modal of bubble-1 -->
+<div class="modal fade" id="bubble-1" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Risk</h4>
+        </div>
+        <div class="modal-body">
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+</div>
+
+<!-- Modal of bubble-2 -->
+<div class="modal fade" id="bubble-2" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">??</h4>
+        </div>
+        <div class="modal-body">
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+</div>
+
+<!-- Modal of bubble-ip -->
+<div class="modal fade" id="bubble-ip" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Your IP</h4>
+        </div>
+        <div class="modal-body">
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+</div>
+
+<!-- Modal of bubble-engagements -->
+<div class="modal fade" id="bubble-engagements" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Engagements</h4>
+        </div>
+        <div class="modal-body">
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+</div>
+
+<!-- Modal of bubble-scheduled-scan -->
+<div class="modal fade" id="bubble-scheduled-scan" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Scheduled Scan</h4>
+        </div>
+        <div class="modal-body">
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+</div>
+
+<!-- Modal of bubble-bugs-found -->
+<div class="modal fade" id="bubble-bugs-found" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Bugs Found</h4>
+        </div>
+        <div class="modal-body">
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+</div>
+
+<!-- Modal of bubble-metrics -->
+<div class="modal fade" id="bubble-metrics" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Metrics</h4>
+        </div>
+        <div class="modal-body">
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+</div>
+
+<!-- Modal of bubble-reports -->
+<div class="modal fade" id="bubble-reports" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Reports</h4>
+        </div>
+        <div class="modal-body">
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+</div>
+
+<!-- Modal of bubble-closed-bugs -->
+<div class="modal fade" id="bubble-closed-bugs" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Closed Bugs</h4>
+        </div>
+        <div class="modal-body">
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+
 {% endblock %}
 {% block postscript %}
     <!-- Flot Charts JavaScript -->
@@ -187,6 +352,11 @@
         <script src="{% static "JUMFlot/jquery.flot.mouse.js" %}"></script>
         <script src="{% static "JUMFlot/jquery.flot.bubbles.js" %}"></script>
     {% endif %}
+    <script>
+    $(document).ready(function(){
+        $('[data-toggle="popover"]').popover();
+    });
+    </script>
     <script src="{% static "dojo/js/Chart.bundle.min.js" %}"></script>
     <script src="{% static "dojo/js/utils.js" %}"></script>
 	<script>
