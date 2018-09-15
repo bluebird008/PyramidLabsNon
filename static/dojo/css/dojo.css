@@ -1574,40 +1574,40 @@ small {
 /* custom css by Sajjan Nehal (Fast Creatorz)*/
 /* dashboard */
 .navbar-fixed-top{
-    background-color: #00FE5A !important;
-    border-color: #00FE5A;
-    color: #090808 !important;
+    background-color: #fff !important;
+    border-color: #fff;
+    color: #bfc3c6 !important;
 }
  .navbar-fixed-top a{
-    color: #090808 !important;
+    color: #bfc3c6 !important;
 }
 .nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
-    background-color: #00FE5A !important;
-    border-color: #00FE5A !important;
+    background-color: #fff !important;
+    border-color: #fff !important;
     color: #090808 !important;
 }
 .dropdown-menu{
-    background-color: #00FE5A !important;
-    border-color: #00FE5A !important;
-    color: #090808 !important;
+    background-color: #fff !important;
+    border-color: #fff !important;
+    color: #bfc3c6 !important;
 
 }
 .dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {
     color: #262626;
     text-decoration: none;
-    background-color: #00FE5A;
+    background-color: #fff;
 }
 .nav > li > a:focus, .nav > li > a:hover,.navbar-fixed-top a:hover .fa, .navbar-fixed-top .open .fa{
     text-decoration: none;
-    background-color: #00FE5A;
+    background-color: #fff;
     color: #090808 !important;
     border-radius: 0px !important;
 }
 #wrapper {
-    background-color: #00FE5A !important;
+    background-color: #fff !important;
 }
 body.min #page-wrapper {
-    background-color: #bdbbbc !important;
+    background-color: #f6f7fb !important;
 }
 
 body{
@@ -1619,19 +1619,19 @@ body{
     border-color: #00FE5A !important;
 }
 .btn-primary .fa {
-    color: #090808;
+    color: #bfc3c6;
 }
 .nav .custom-search-form button{
-    background-color: #090808 !important;
+    background-color: #f6f7fb !important;
 }
 .nav .custom-search-form button i{
     color: #00FF24 !important;
 }
 .form-control, .CodeMirror, .search-field>.default{
-    border: 2px solid #090808 !important;
+    border: 2px solid #f6f7fb !important;
     border-radius: 5px !important;
     color: #00FF24 !important;
-    background-color: #9b9798 !important;
+    background-color: #fff !important;
 }
 .form-control::placeholder {
     color: #00FE5A;
@@ -1643,14 +1643,14 @@ body{
     box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6) !important;
 }
 .sidebar{
-    background-color: #00FE5A;
-    color: #434343;
+    background-color: #fff;
+    color: #bfc3c6;
 }
 .sidebar a i{
-    color: #090808 !important;
+    color: #bfc3c6 !important;
 }
 .sidebar ul li a.active, .sidebar ul li a.active .fa{
-    background-color: #090808;
+    background-color: #fff;
     color: #00FE5A !important;
 }
 .sidebar ul li {
@@ -1662,8 +1662,8 @@ body{
 }
 .panel-default > .panel-heading {
     color: #090808 !important;
-    background-color: #00FE5A;
-    border-color: #00FE5A;
+    background-color: #fff;
+    border-color: #fff;
 }
 /*.secondary-color , .panel-red > .panel-heading, .panel-green > .panel-heading, .panel-yellow > .panel-heading {*/
     /*color: #00FE5A !important;*/
