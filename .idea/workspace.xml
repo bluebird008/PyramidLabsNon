@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="26893c3e-7ccd-416d-a802-703c188f9b31" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dojo/static/dojo/img/logo.png" afterPath="$PROJECT_DIR$/dojo/static/dojo/img/logo.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dojo/static/dojo/css/dojo.css" afterPath="$PROJECT_DIR$/dojo/static/dojo/css/dojo.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dojo/templates/base.html" afterPath="$PROJECT_DIR$/dojo/templates/base.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dojo/templates/dojo/dashboard.html" afterPath="$PROJECT_DIR$/dojo/templates/dojo/dashboard.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/dojo/css/dojo.css" afterPath="$PROJECT_DIR$/static/dojo/css/dojo.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,8 +45,8 @@
       <file leaf-file-name="dojo.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dojo/static/dojo/css/dojo.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="1642" column="52" lean-forward="false" selection-start-line="1642" selection-start-column="52" selection-end-line="1642" selection-end-column="52" />
+            <state relative-caret-position="263">
+              <caret line="1652" column="37" lean-forward="false" selection-start-line="1652" selection-start-column="37" selection-end-line="1652" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -52,8 +55,18 @@
       <file leaf-file-name="dashboard.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dojo/templates/dojo/dashboard.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="55" column="22" lean-forward="true" selection-start-line="55" selection-start-column="22" selection-end-line="55" selection-end-column="22" />
+            <state relative-caret-position="324">
+              <caret line="42" column="41" lean-forward="false" selection-start-line="42" selection-start-column="41" selection-end-line="42" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dojo/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1033">
+              <caret line="129" column="28" lean-forward="true" selection-start-line="129" selection-start-column="28" selection-end-line="129" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -75,7 +88,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/dojo/templates/base.html" />
         <option value="$PROJECT_DIR$/dojo/home/urls.py" />
         <option value="$PROJECT_DIR$/dojo/user/views.py" />
         <option value="$PROJECT_DIR$/dojo/user/urls.py" />
@@ -84,8 +96,9 @@
         <option value="$PROJECT_DIR$/dojo/middleware.py" />
         <option value="$PROJECT_DIR$/dojo/home/views.py" />
         <option value="$PROJECT_DIR$/dojo/templates/dojo/index.html" />
-        <option value="$PROJECT_DIR$/dojo/templates/dojo/dashboard.html" />
+        <option value="$PROJECT_DIR$/dojo/templates/base.html" />
         <option value="$PROJECT_DIR$/dojo/static/dojo/css/dojo.css" />
+        <option value="$PROJECT_DIR$/dojo/templates/dojo/dashboard.html" />
       </list>
     </option>
   </component>
@@ -147,13 +160,6 @@
               <item name="PyramidLabsNon" type="462c0819:PsiDirectoryNode" />
               <item name="dojo" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PyramidLabsNon" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PyramidLabsNon" type="462c0819:PsiDirectoryNode" />
-              <item name="dojo" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="dojo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PyramidLabsNon" type="b2602c69:ProjectViewProjectNode" />
@@ -280,14 +286,21 @@
       <option name="project" value="LOCAL" />
       <updated>1537028621666</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="dashboard changed color in white &amp; grey background and dark green font">
+      <created>1537204831133</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1537204831133</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="99" width="1600" height="873" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15528351" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15701416" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33013698" sideWeight="0.5025773" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32925257" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -295,7 +308,7 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.4974227" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32833788" sideWeight="0.4974227" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -324,13 +337,32 @@
     <MESSAGE value="dashboard bubbles created all." />
     <MESSAGE value="dashboard bubble on click info box created" />
     <MESSAGE value="dashboard changed color in white &amp; light gray and removed bubbles" />
-    <option name="LAST_COMMIT_MESSAGE" value="dashboard changed color in white &amp; light gray and removed bubbles" />
+    <MESSAGE value="dashboard changed color in white &amp; grey background and dark green font" />
+    <option name="LAST_COMMIT_MESSAGE" value="dashboard changed color in white &amp; grey background and dark green font" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/dojo/static/dojo/css/dojo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dojo/templates/dojo/dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="55" column="22" lean-forward="true" selection-start-line="55" selection-start-column="22" selection-end-line="55" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/dojo/static/dojo/css/dojo.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30690">
@@ -564,13 +596,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dojo/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="15" column="18" lean-forward="true" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dojo/templates/dojo/product.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -665,18 +690,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/dojo/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1033">
+          <caret line="129" column="28" lean-forward="true" selection-start-line="129" selection-start-column="28" selection-end-line="129" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/dojo/templates/dojo/dashboard.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="55" column="22" lean-forward="true" selection-start-line="55" selection-start-column="22" selection-end-line="55" selection-end-column="22" />
+        <state relative-caret-position="324">
+          <caret line="42" column="41" lean-forward="false" selection-start-line="42" selection-start-column="41" selection-end-line="42" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dojo/static/dojo/css/dojo.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="1642" column="52" lean-forward="false" selection-start-line="1642" selection-start-column="52" selection-end-line="1642" selection-end-column="52" />
+        <state relative-caret-position="263">
+          <caret line="1652" column="37" lean-forward="false" selection-start-line="1652" selection-start-column="37" selection-end-line="1652" selection-end-column="37" />
           <folding />
         </state>
       </provider>
