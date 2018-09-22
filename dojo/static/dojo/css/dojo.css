@@ -1574,6 +1574,9 @@ small {
     border-color: #fff;
     color: #1BBD00 !important;
 }
+.navbar-brand{
+    padding-left: 40px !important;
+}
  .navbar-fixed-top a{
     color: #bfc3c6 !important;
 }
