@@ -1589,6 +1589,7 @@ small {
     background-color: #fff !important;
     border-color: #fff !important;
     color: #bfc3c6 !important;
+    left: 50% !important;
 
 }
 .dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {
@@ -1612,16 +1613,52 @@ body.min #page-wrapper {
 body{
     color:#1BBD00 !important;
 }
-.btn-primary, .btn-primary.focus, .btn-primary:focus {
-    color: #fff;
-    background-color: #1BBD00 !important;
-    border-color: #1BBD00 !important;
+.btn-primary{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    padding: .7rem 1.5rem;
+    border-radius: 3px !important;
+    margin-bottom: 10px;
+    cursor: pointer;
+    -webkit-transition: 350ms ease all;
+    transition: 350ms ease all;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.10);
 }
-.btn-primary .fa {
-    color: #bfc3c6;
+.btn-primary, .btn-primary:hover, .btn-primary:focus,
+.btn-outline-primary:hover, .btn-outline-primary:focus,
+.btn-primary.active, .btn-primary:active,.btn-outline-primary.active, .btn-outline-primary:active,
+.show>.btn-outline-primary.dropdown-toggle,
+.show>.btn-primary.dropdown-toggle, .btn-primary.disabled,
+.btn-primary:disabled{
+    color: #fff;
+    background-color: #6200ea !important;
+    border-color: #6200ea !important;
+}
+.btn-primary:hover, .btn-primary:focus,
+.btn-outline-primary:hover, .btn-outline-primary:focus{
+    box-shadow: 0px 6px 10px rgba(98,0,234, 0.25) !important;
+    background-color: #6200ea !important;
+}
+.show>.btn-white.dropdown-toggle,.show>.btn-outline-white.dropdown-toggle,
+.show>.btn-secondary.dropdown-toggle,.show>.btn-outline-secondary.dropdown-toggle,
+.show>.btn-primary.dropdown-toggle,.show>.btn-outline-primary.dropdown-toggle,
+.show>.btn-info.dropdown-toggle, .show>.btn-outline-info.dropdown-toggle,
+.show>.btn-success.dropdown-toggle,.show>.btn-outline-success.dropdown-toggle,
+.show>.btn-warning.dropdown-toggle, .show>.btn-outline-warning.dropdown-toggle,
+.show>.btn-danger.dropdown-toggle, .show>.btn-outline-danger.dropdown-toggle{
+    opacity: 0.9;
+}
+
+.progress-bar {
+    /*height: 4px;*/
+}
+.progress.progress-success{
+    background: rgba(0,200,83, 0.2);
 }
 .nav .custom-search-form button{
     background-color: #f6f7fb !important;
+    border-color: #1BBD00 !important;
 }
 .nav .custom-search-form button i{
     color: #1BBD00 !important;
