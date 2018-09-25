@@ -1585,7 +1585,7 @@ small {
     border-color: #fff !important;
     color: #090808 !important;
 }
-.dropdown-menu{
+.ip-address-box .dropdown-menu{
     background-color: #fff !important;
     border-color: #fff !important;
     color: #bfc3c6 !important;

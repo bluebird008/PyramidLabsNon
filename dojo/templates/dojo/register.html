@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="description" content="Protecting people like you, from people like us.">
+
+  <meta name="author" content="">
+
+  <title>Pyramid Labs</title>
+
+<!-- Mobile Specific Meta
+  ================================================== -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% load static from staticfiles %}
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="{% static "dojo/img/favicon.png" %}"/>
+  <!-- CSS
+  ================================================== -->
+<!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="{% static "dojo/css/style.css" %}">
+  <link rel="stylesheet" href="{% static "dojo/css/dojo.css" %}">
+
+</head>
+<body>
+<!--Fixed Navigation
+==================================== -->
+<section class="header  navigation">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-12">
+            <nav class="navbar navbar-expand-md">
+               <a class="navbar-brand" href="{% url 'home' %}">
+                  <img src="{% static "dojo/images/logo.png" %}" alt="logo">
+               </a>
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="tf-ion-android-menu"></span>
+            </button>
+
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+               <li class="nav-item">
+                  <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
+               </li>
+
+               <li class="nav-item">
+                  <a class="nav-link" href="{% url 'login' %}">Login</a>
+               </li>
+               <li class="nav-item active">
+                  <a class="nav-link" href="{% url 'register' %}">Register</a>
+               </li>
+             <!--  <li class="nav-item">
+                  <a class="nav-link" href="service.html">Service</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="portfolio.html">Portfolio</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+               </li>
+               <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     Pages
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                     <a class="dropdown-item" href="404.html">404 Page</a>
+                  </div>
+
+               </li>
+-->
+            </ul>
+         </div>
+      </nav>
+
+   </div>
+</div>
+</div>
+</section>
+
+<section class="container register">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="title text-center text-white">
+              <h2>//Register</h2>
+              <span class="border"></span>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+        </div>
+    </div>
+{#    <form class="form-horizontal" action="{% url 'thankyou' %}" method="post">#}
+    <form class="form-horizontal" action="" method="post">
+        {% csrf_token %}
+{#        {{ form }}#}
+        <div class="row">
+            <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1">
+                <h3>Personal:</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3">
+              <div class="form-group">
+                <label class="control-label col-sm-3" for="name">Name:</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="name" placeholder="Enter name" name="first_name" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label col-sm-3" for="lname">Last Name:</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="lname" placeholder="Enter last name" name="last_name" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label col-sm-3" for="email">Email:</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="email" placeholder="Enter email" name="email" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label col-sm-3" for="title">Title:</label>
+                <div class="col-sm-9">
+                  <select class="form-control" id="title" name="title" required>
+                    <option value="Mr.">Mr.</option>
+                    <option value="Mrs.">Mrs.</option>
+                    <option value="Miss">Miss</option>
+                    <option value="etc">etc</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label col-sm-3" for="address">Address:</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="address" placeholder="Enter address" name="address" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label col-sm-3" for="city">City:</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="city" placeholder="Enter city" name="city" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label col-sm-3" for="state">State:</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="state" placeholder="Enter state" name="state" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label col-sm-3" for="zip_code">Zip Code:</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="zip_code" placeholder="Enter zip code" name="zip_code" required>
+                </div>
+              </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1">
+                <h3>Plan:</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3">
+
+              <div class="form-group">
+                <label class="control-label col-sm-3" for="select_platform">Select Platform:</label>
+                <div class="col-sm-9">
+                  <div class="checkbox">
+                    <label><input type="radio" name="select_platform" value="pyramid" class="pyramid" required checked> pYramid</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="radio" name="select_platform" value="pyramid_pro" class="pyramid_pro" required> pYramid Pro</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="control-label col-sm-3" for="select_plan">Select Plan:</label>
+                <div class="col-sm-9 select_plan_pyramid">
+                  <select class="form-control" id="select_plan" name="select_plan_pyramid">
+                    <option value="$99">Monthly - $99/month</option>
+                    <option value="$999">Yearly - $999</option>
+                  </select>
+                </div>
+                <div class="col-sm-9 select_plan_pyramid_pro" style='display:none'>
+                  <select class="form-control" id="select_plan" name="select_plan_pyramid_pro">
+                    <option value="$149">Monthly - $149/month</option>
+                    <option value="$1499">Yearly - $1499</option>
+                  </select>
+                </div>
+              </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1">
+                <h3>Login Details:</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3">
+              <div class="form-group">
+                <label class="control-label col-sm-3" for="username">Set a username:</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="username" placeholder="Enter username" name="username" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label col-sm-3" for="password">Set a password:</label>
+                <div class="col-sm-9">
+                  <input type="password" class="form-control" id="password" placeholder="Enter password" name="password1" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label col-sm-3" for="confirm_password">Set a confirm password:</label>
+                <div class="col-sm-9">
+                  <input type="password" class="form-control" id="confirm_password" placeholder="Enter Confirm password" name="password2" required>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3">
+
+              <div class="form-group">
+                <div class="col-sm-offset-3 col-sm-9">
+                  <div class="checkbox">
+                    <label><input type="checkbox" name="accept_terms" required> accept terms*</label>
+                  </div>
+                </div>
+              </div>
+
+              <input type="hidden" name="is_staff" value="1">
+
+              <div class="form-group">
+                <div class="col-sm-offset-3 col-sm-9">
+                    {% for error in form.errors %}
+                      <p style="color: red">{{ error }}</p>
+                    {% endfor %}
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="col-sm-offset-3 col-sm-9">
+                  <button type="submit" class="btn btn-success">Submit</button>
+                </div>
+              </div>
+
+            </div>
+        </div>
+    </form>
+</section>
+
+<footer id="footer" class="bg-one">
+  <div class="top-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3 col-md-3 col-lg-3">
+          <h3></h3>
+          <p></p>
+        </div>
+
+        <!-- End of .col-sm-3 -->
+
+<!--
+        <div class="col-sm-3 col-md-3 col-lg-3">
+          <h3>Our Services</h3>
+          <ul>
+            <li><a href="#">Graphic Design</a></li>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Web Development</a></li>
+          </ul>
+        </div>
+-->
+        <!-- End of .col-sm-3 -->
+
+<!--
+        <div class="col-sm-3 col-md-3 col-lg-3">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Partners</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">FAQ’s</a></li>
+            <li><a href="#">Badges</a></li>
+          </ul>
+        </div>
+-->
+        <!-- End of .col-sm-3 -->
+
+<!--
+        <div class="col-sm-3 col-md-3 col-lg-3">
+          <h3>Subscribe Now</h3>
+          <form class="subscribe-form">
+            <div class="form-group">
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            </div>
+            <button type="submit" class="btn btn-main-sm">Subscribe Now</button>
+          </form>
+        </div>
+-->
+        <!-- End of .col-sm-3 -->
+
+      </div>
+    </div> <!-- end container -->
+  </div>
+</footer>
+
+
+    <!-- end Footer Area
+    ========================================== -->
+
+
+    <script src="{% static "dojo/plugins/jquery/dist/jquery.min.js" %}"></script>
+    <!-- Bootstrap 3.7 -->
+    <script src="{% static "dojo/plugins/bootstrap/dist/js/popper.min.js" %}"></script>
+    <script src="{% static "dojo/plugins/bootstrap/dist/js/bootstrap.min.js" %}"></script>
+
+    <!-- Custom js -->
+    <script>
+
+    $(document).ready(function() {
+        $('input[type="radio"]').click(function() {
+            if($(this).attr('class') == 'pyramid') {
+                $('.select_plan_pyramid').show();
+            }
+
+            else {
+                $('.select_plan_pyramid').hide();
+            }
+        });
+        $('input[type="radio"]').click(function() {
+            if($(this).attr('class') == 'pyramid_pro') {
+                $('.select_plan_pyramid_pro').show();
+            }
+
+            else {
+                $('.select_plan_pyramid_pro').hide();
+            }
+        });
+    });
+
+    </script>
+    <script src="{% static "dojo/js/script.js" %}"></script>
+
+</body>
+</html>

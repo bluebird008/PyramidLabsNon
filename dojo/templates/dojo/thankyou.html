@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="description" content="Protecting people like you, from people like us.">
+
+  <meta name="author" content="">
+
+  <title>Pyramid Labs</title>
+
+<!-- Mobile Specific Meta
+  ================================================== -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% load static from staticfiles %}
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="{% static "dojo/img/favicon.png" %}"/>
+  <!-- CSS
+  ================================================== -->
+<!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="{% static "dojo/css/style.css" %}">
+  <link rel="stylesheet" href="{% static "dojo/css/dojo.css" %}">
+
+</head>
+<body>
+<!--Fixed Navigation
+==================================== -->
+<section class="header  navigation">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-12">
+            <nav class="navbar navbar-expand-md">
+               <a class="navbar-brand" href="{% url 'home' %}">
+                  <img src="{% static "dojo/images/logo.png" %}" alt="logo">
+               </a>
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="tf-ion-android-menu"></span>
+            </button>
+
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+               <li class="nav-item">
+                  <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
+               </li>
+
+               <li class="nav-item">
+                  <a class="nav-link" href="{% url 'login' %}">Login</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="{% url 'register' %}">Register</a>
+               </li>
+             <!--  <li class="nav-item">
+                  <a class="nav-link" href="service.html">Service</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="portfolio.html">Portfolio</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+               </li>
+               <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     Pages
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                     <a class="dropdown-item" href="404.html">404 Page</a>
+                  </div>
+-->
+               </li>
+            </ul>
+         </div>
+      </nav>
+
+   </div>
+</div>
+</div>
+</section>
+
+<section class="container register">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="title text-center text-white">
+              <h2>//Thank you join with us</h2>
+              <span class="border"></span>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer id="footer" class="bg-one">
+  <div class="top-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3 col-md-3 col-lg-3">
+          <h3></h3>
+          <p></p>
+        </div>
+
+        <!-- End of .col-sm-3 -->
+
+<!--
+        <div class="col-sm-3 col-md-3 col-lg-3">
+          <h3>Our Services</h3>
+          <ul>
+            <li><a href="#">Graphic Design</a></li>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Web Development</a></li>
+          </ul>
+        </div>
+-->
+        <!-- End of .col-sm-3 -->
+
+<!--
+        <div class="col-sm-3 col-md-3 col-lg-3">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Partners</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">FAQ’s</a></li>
+            <li><a href="#">Badges</a></li>
+          </ul>
+        </div>
+-->
+        <!-- End of .col-sm-3 -->
+
+<!--
+        <div class="col-sm-3 col-md-3 col-lg-3">
+          <h3>Subscribe Now</h3>
+          <form class="subscribe-form">
+            <div class="form-group">
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            </div>
+            <button type="submit" class="btn btn-main-sm">Subscribe Now</button>
+          </form>
+        </div>
+-->
+        <!-- End of .col-sm-3 -->
+
+      </div>
+    </div> <!-- end container -->
+  </div>
+</footer>
+
+
+    <!-- end Footer Area
+    ========================================== -->
+
+
+    <script src="{% static "dojo/plugins/jquery/dist/jquery.min.js" %}"></script>
+    <!-- Bootstrap 3.7 -->
+    <script src="{% static "dojo/plugins/bootstrap/dist/js/popper.min.js" %}"></script>
+    <script src="{% static "dojo/plugins/bootstrap/dist/js/bootstrap.min.js" %}"></script>
+
+    <script src="{% static "dojo/js/script.js" %}"></script>
+
+</body>
+</html>

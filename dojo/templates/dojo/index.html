@@ -140,7 +140,7 @@ Welcome Slider
 					<ul class="list-inline wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".7s">
 						<li class="list-inline-item">
                             <a href="{% url 'login' %}" class="btn btn-main"><font color=black>&nbsp;&nbsp;Login&nbsp;</font></a>
-                            <a href="" target="_blank" class="btn btn-main"><font color=black>Register</font></a>
+                            <a href="{% url 'register' %}" target="_blank" class="btn btn-main"><font color=black>Register</font></a>
 						</li>
 					</ul>
 				</div>
@@ -618,7 +618,7 @@ Start About Section
 						<!-- /plan description -->
 
 						<!-- signup button -->
-                        <a class="btn btn-main" href="#"><font color=black>Register</font></a>
+                        <a class="btn btn-main" href="{% url 'register' %}"><font color=black>Register</font></a>
 						<!-- /signup button -->
 
 					</div>

@@ -8,17 +8,34 @@ from dateutil.relativedelta import relativedelta
 from django.contrib.auth.decorators import user_passes_test
 from django.core.urlresolvers import reverse
 from django.http import HttpResponseRedirect
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.utils import timezone
-
+from django.contrib.auth import login, authenticate
 from dojo.models import Finding, Engagement, Risk_Acceptance
+from dojo.forms import registration
+
 from dojo.utils import add_breadcrumb, get_punchcard_data
+from django.contrib.auth.forms import UserCreationForm
 
 logger = logging.getLogger(__name__)
 
 
 def home(request):
     return render(request, 'dojo/index.html')
+
+def thankyou(request):
+    return render(request, 'dojo/thankyou.html')
+
+def register(request):
+    if request.method == "POST":
+        form = registration(request.POST)
+        if form.is_valid():
+            form.save()
+        return render(request, 'dojo/thankyou.html')
+    else:
+        form = registration()
+    return render(request, 'dojo/register.html', {'form': form})
+
 
 @user_passes_test(lambda u: u.is_staff)
 def dashboard(request):

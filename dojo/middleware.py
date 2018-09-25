@@ -32,8 +32,8 @@ class LoginRequiredMiddleware:
         # if not request.user.is_authenticated():
         #     path = request.path_info.lstrip('/')
         #     if not any(m.match(path) for m in EXEMPT_URLS):
-        #         fullURL = "%s?next=%s" % (settings.LOGIN_URL,
-        #                                   urlquote(request.get_full_path()))
+        #         # fullURL = "%s?next=%s" % (settings.LOGIN_URL, urlquote(request.get_full_path()))
+        #         fullURL = "/login"
         #         return HttpResponseRedirect(fullURL)
 
 class TimezoneMiddleware:

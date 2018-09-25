@@ -30,6 +30,54 @@ FINDING_STATUS = (('verified', 'Verified'),
 SEVERITY_CHOICES = (('Info', 'Info'), ('Low', 'Low'), ('Medium', 'Medium'),
                     ('High', 'High'), ('Critical', 'Critical'))
 
+from django.contrib.auth.models import User
+from django.contrib.auth.forms import UserCreationForm
+
+class registration(UserCreationForm):
+    first_name = forms.CharField(max_length=50,required=True,)
+    last_name = forms.CharField(max_length=50,required=True,)
+    email = forms.CharField(max_length=50,required=True,)
+    title = forms.CharField(max_length=10,required=True,)
+    address = forms.CharField(max_length=150,required=True,)
+    city = forms.CharField(max_length=50,required=True,)
+    state = forms.CharField(max_length=50,required=True,)
+    zip_code = forms.CharField(max_length=50,required=True,)
+    select_platform = forms.CharField(max_length=50,required=True,)
+    select_plan_pyramid = forms.CharField(max_length=50,required=False,)
+    select_plan_pyramid_pro = forms.CharField(max_length=50,required=False,)
+    username = forms.CharField(max_length=50,required=True,)
+    password1 = forms.CharField(max_length=50,required=True)
+    password2 = forms.CharField(max_length=50,required=True,)
+    accept_terms = forms.BooleanField(required=True,)
+    is_staff = forms.BooleanField(required=True,)
+
+    class Meta:
+        model = User
+        fields = ('first_name', 'email', 'last_name', 'title', 'address', 'city', 'zip_code', 'select_platform', 'select_plan_pyramid_pro', 'username', 'password1', 'password2', 'accept_terms', 'is_staff')
+
+    def save(self, commit=True):
+        user = super(registration, self).save(commit=False)
+        user.first_name = self.cleaned_data['first_name']
+        user.last_name = self.cleaned_data['last_name']
+        user.email = self.cleaned_data['email']
+        user.title = self.cleaned_data['title']
+        user.address = self.cleaned_data['address']
+        user.city = self.cleaned_data['city']
+        user.state = self.cleaned_data['state']
+        user.zip_code = self.cleaned_data['zip_code']
+        user.select_platform = self.cleaned_data['select_platform']
+        user.select_plan_pyramid_pro = self.cleaned_data['select_plan_pyramid_pro']
+        user.username = self.cleaned_data['username']
+        user.password1 = self.cleaned_data['password1']
+        user.password2 = self.cleaned_data['password2']
+        user.accept_terms = self.cleaned_data['accept_terms']
+        user.is_staff = self.cleaned_data['is_staff']
+
+        if commit:
+            user.save()
+
+        return user
+
 
 class SelectWithPop(forms.Select):
     def render(self, name, *args, **kwargs):
