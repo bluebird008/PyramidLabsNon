@@ -185,6 +185,78 @@
         </div>
     </div>
     <div class="row">
+
+    <div class="row">
+        <div class="col-lg-3 col-sm-3">
+            <div class="panel panel-default box">
+              <div class="panel-heading text-center">
+                  <h2>Risk Level 2</h2>
+              </div>
+              <div class="panel-body">
+                  <h2><small>Bugs Found:</small> 15</h2>
+                  <h2><small>Bugs Closed:</small> 2</h2>
+                  <h4><small>Warnings: </small> 60</h4>
+                  <h4 class="text-primary">+5.2% ($456)</h4>
+              </div>
+              <div class="panel-footer">
+                <div class="progress progress-success">
+                                    <div class="progress-bar" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-medium" aria-valuenow="30"
+  aria-valuemin="0" aria-valuemax="100" role="progressbar" style="width:30%">
+                    Medium 30%
+                  </div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-warning" aria-valuenow="70"
+  aria-valuemin="0" aria-valuemax="100" role="progressbar" style="width:70%">
+                    High 70%
+                  </div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-danger" aria-valuenow="90"
+  aria-valuemin="0" aria-valuemax="100" role="progressbar" style="width:90%">
+                    Danger 90%
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="col-lg-9 col-sm-9">
+            <div class="panel panel-default box">
+              <div class="panel-heading text-center">
+                  <h2>Findings 2</h2>
+              </div>
+              <div class="panel-body">
+                  <div class="row">
+                      <div class="col-sm-7">
+                          <h3>Engagements</h3>
+                          <canvas id="history-chart-1"></canvas>
+                      </div>
+                      <div class="col-sm-5 border-left-1 text-center">
+                        <div class="row">
+                          <h3>Pen Test Reports</h3>
+                          <h4 class="">
+                              <i class="glyphicon glyphicon-exclamation-sign fa-5x"></i>
+                              <br>
+                              Balanced
+                          </h4>
+                          <h4 class="text-primary">Change your risk</h4>
+                          <div class="col-sm-6 border-top-1">
+                              Nr <br> AWS 2455
+                          </div>
+                          <div class="col-sm-6 border-top-1 border-left-1">
+                              Created <br> 11 Dec 2018
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
         {% if punchcard %}
             <div class="col-lg-12">
                 <div class="panel panel-default">
@@ -457,6 +529,8 @@
 			window.myPie = new Chart(ctx3, config3);
 			var ctx4 = document.getElementById('chart-details').getContext('2d');
 			window.myBar = new Chart(ctx4, config4);
+			var ctx5 = document.getElementById('history-chart-1').getContext('2d');
+			window.myBar = new Chart(ctx5, config2);
 		};
 	</script>
 
