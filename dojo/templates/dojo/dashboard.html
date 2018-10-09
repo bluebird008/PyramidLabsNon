@@ -156,6 +156,7 @@
             </div>
         </div>
     </div>
+
     <div class="row">
         <div class="col-lg-6">
             <div class="panel panel-default">
@@ -309,6 +310,36 @@
             </div>
         </div>
     </div>
+
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="panel panel-default">
+                <div class="panel-heading text-center">
+                    <h2>Historical Finding Severity 1</h2>
+                </div>
+                <!-- /.panel-heading -->
+                <div class="panel-body">
+                    <canvas id="chart-area-1"></canvas>
+                </div>
+                <!-- /.panel-body -->
+            </div>
+            <!-- /.panel -->
+        </div>
+        <div class="col-lg-6">
+            <div class="panel panel-default">
+                <div class="panel-heading text-center">
+                    <h2>Reported Finding Severity by Month 1</h2>
+                </div>
+                <!-- /.panel-heading -->
+                <div class="panel-body">
+                    <div class="chart" id="line-chart-1"></div>
+                </div>
+                <!-- /.panel-body -->
+            </div>
+            <!-- /.panel -->
+        </div>
+    </div>
+
 
     <div class="row">
         {% if punchcard %}
@@ -587,14 +618,15 @@
 			var ctx4 = document.getElementById('chart-details').getContext('2d');
 			window.myBar = new Chart(ctx4, config4);
 
-			var ctx5 = document.getElementById('history-chart-1').getContext('2d');
-			window.myBar = new Chart(ctx5, config2);
+			var ctx5 = document.getElementById('chart-pie-1').getContext('2d');
+			window.myPie = new Chart(ctx5, config3);
 
-			var ctx6 = document.getElementById('chart-pie-1').getContext('2d');
-			window.myPie = new Chart(ctx6, config3);
+			var ctx6 = document.getElementById('chart-details-1').getContext('2d');
+			window.myBar = new Chart(ctx6, config4);
 
-			var ctx7 = document.getElementById('chart-details-1').getContext('2d');
-			window.myBar = new Chart(ctx7, config4);
+			var ctx7 = document.getElementById('chart-area-1').getContext('2d');
+			window.myDoughnut = new Chart(ctx7, config);
+
 		};
 	</script>
 
@@ -661,52 +693,24 @@
                             color: '#337ab7',
                         }],
                         options);
-            }
-
-            function severity_pie() {
-                var data = [{
-                    label: "Critical",
-                    color: "#d9534f",
-                    data: {{critical}}
-                }, {
-                    label: "High",
-                    color: "#f0ad4e",
-                    data: {{high}}
-                }, {
-                    label: "Medium",
-                    color: "#f0de28",
-                    data: {{medium}}
-                }, {
-                    label: "Low",
-                    color: "#337ab7",
-                    data: {{low}}
-                }, {
-                    label: "Informational",
-                    color: "#E0E0E0",
-                    data: {{info}}
-                }];
-
-                var plotObj = $.plot($("#donut-chart"), data, {
-                    series: {
-                        pie: {
-                            innerRadius: 0.5,
-                            show: true,
-                            radius: 1,
-                            label: {
-                                show: false,
-                                radius: 2 / 3,
-                                formatter: function (label, series) {
-                                    return '<div style="font-size:8pt;text-align:center;padding:2px;color:#00FF24;z-index:9999;">' + label + '<br/>' + series.data[0][1] + '</div>';
-
-                                },
-
-                            }
-                        }
-                    },
-                    grid: {
-                        hoverable: true,
-                    },
-                });
+                var plotObj1 = $.plot($("#line-chart-1"), [{
+                            data: critical,
+                            label: " Critical",
+                            color: "#d9534f",
+                        }, {
+                            data: high,
+                            label: " High",
+                            color: '#f0ad4e',
+                        }, {
+                            data: medium,
+                            label: " Medium",
+                            color: '#f0de28',
+                        }, {
+                            data: low,
+                            label: " Low",
+                            color: '#337ab7',
+                        }],
+                        options);
             }
 
             {%  if punchcard %}
