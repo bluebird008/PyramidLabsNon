@@ -44,28 +44,28 @@
       <file leaf-file-name="dojo.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dojo/static/dojo/css/dojo.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="488">
-              <caret line="1630" column="36" lean-forward="true" selection-start-line="1630" selection-start-column="36" selection-end-line="1630" selection-end-column="36" />
+            <state relative-caret-position="1096">
+              <caret line="1904" column="3" lean-forward="false" selection-start-line="1904" selection-start-column="3" selection-end-line="1904" selection-end-column="3" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dashboard.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="dashboard.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dojo/templates/dojo/dashboard.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="169" column="37" lean-forward="true" selection-start-line="169" selection-start-column="37" selection-end-line="169" selection-end-column="37" />
+            <state relative-caret-position="268">
+              <caret line="83" column="28" lean-forward="true" selection-start-line="83" selection-start-column="28" selection-end-line="83" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dojo/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="281" column="11" lean-forward="true" selection-start-line="281" selection-start-column="11" selection-end-line="281" selection-end-column="11" />
+            <state relative-caret-position="198">
+              <caret line="169" column="22" lean-forward="false" selection-start-line="169" selection-start-column="22" selection-end-line="169" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -200,7 +200,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="RunDashboard">
@@ -397,7 +397,14 @@
       <option name="project" value="LOCAL" />
       <updated>1539011677525</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="created 2 boxes more">
+      <created>1539096872625</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1539096872625</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -452,7 +459,8 @@
     <MESSAGE value="1 button created" />
     <MESSAGE value="create 3 boxes more" />
     <MESSAGE value="created 3 boxes more" />
-    <option name="LAST_COMMIT_MESSAGE" value="created 3 boxes more" />
+    <MESSAGE value="created 2 boxes more" />
+    <option name="LAST_COMMIT_MESSAGE" value="created 2 boxes more" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -840,26 +848,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dojo/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="281" column="11" lean-forward="true" selection-start-line="281" selection-start-column="11" selection-end-line="281" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dojo/static/dojo/css/dojo.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="1630" column="36" lean-forward="true" selection-start-line="1630" selection-start-column="36" selection-end-line="1630" selection-end-column="36" />
+        <state relative-caret-position="1096">
+          <caret line="1904" column="3" lean-forward="false" selection-start-line="1904" selection-start-column="3" selection-end-line="1904" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dojo/templates/dojo/dashboard.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="169" column="37" lean-forward="true" selection-start-line="169" selection-start-column="37" selection-end-line="169" selection-end-column="37" />
+        <state relative-caret-position="268">
+          <caret line="83" column="28" lean-forward="true" selection-start-line="83" selection-start-column="28" selection-end-line="83" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dojo/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="169" column="22" lean-forward="false" selection-start-line="169" selection-start-column="22" selection-end-line="169" selection-end-column="22" />
           <folding />
         </state>
       </provider>
