@@ -1,7 +1,11 @@
+import uuid
 from rest_framework import viewsets, mixins
 from rest_framework.permissions import DjangoModelPermissions
 from django_filters.rest_framework import DjangoFilterBackend
-
+from rest_framework.decorators import api_view, permission_classes
+from rest_framework.permissions import AllowAny
+from rest_framework.response import Response
+from dojo.tasks import subprocess_cmd
 from dojo.models import Product, Engagement, Test, Finding, \
     User, ScanSettings, Scan, Stub_Finding, Finding_Template, \
     JIRA_Issue, Tool_Product_Settings, Tool_Configuration, Tool_Type, \
@@ -266,3 +270,27 @@ class ReImportScanView(mixins.CreateModelMixin,
                        viewsets.GenericViewSet):
     serializer_class = serializers.ReImportScanSerializer
     queryset = Test.objects.all()
+    
+@permission_classes((AllowAny,))    
+class ScanStartView(viewsets.GenericViewSet):
+    def list(self, request):
+        scan_target = request.GET.get("scan_target")
+        uid = str(uuid.uuid4())
+        if scan_target:
+            subprocess_cmd.delay( "sudo sniper -t "+scan_target, uid)
+            return Response({"status": True, "uid":uid})
+        else:
+            return Response({"status": False, "uid":""})
+
+@permission_classes((AllowAny,))   
+class ScanReportView(viewsets.GenericViewSet):
+    def list(self, request):
+        try:
+            handle=open('/tmp/'+request.GET.get("uid")+'file.txt','r+')
+            output=handle.read()
+            output = output.replace('\n', '<br />')
+            handle.close()
+            return Response({"complete":True, "data":output})
+        except:
+            pass
+        return Response({"complete":False, "data":""})

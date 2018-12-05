@@ -4,6 +4,35 @@
     .chart {height: 300px}
     .status .panel {min-height: 140px;background-color: #f5f5f5;}
     #punchcard {height: 350px}
+    
+.loader_text{
+  margin: auto;
+  text-align: center;
+  color: blue;
+}
+    
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  margin:auto;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 {% endblock %}
 {% block content %}
     <!--
@@ -17,10 +46,10 @@
         <!-- /.col-lg-6 -->
         <div class="col-lg-12 col-sm-12 ip-address-box text-center">
               <div class="form-group">
-                  <div class="col-sm-6 col-sm-offset-3"><input type="text" class="form-control" placeholder="IP address"></div>
+                  <div class="col-sm-6 col-sm-offset-3"><input type="text" id="scan_target" class="form-control" placeholder="IP address"></div>
               </div>
             <br><br>
-              <button type="button" class="btn btn-primary">Vuln Scan</button>
+              <button type="button" id="scan" class="btn btn-primary" data-loading-text="Loading...">Vuln Scan</button>
               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Quick Pentest</button>
               <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Scheduled Scan
               <span class="caret"></span></button>
@@ -33,7 +62,9 @@
         </div>
         <!-- /.col-lg-6 -->
     </div>
-
+<div class="row" id="scan_report">
+        
+</div>
     <div class="row">
         <div class="col-lg-3 col-sm-3">
             <div class="panel panel-default box">
@@ -704,8 +735,65 @@
 
 			var ctx9 = document.getElementById('history-chart-2').getContext('2d');
 			window.myLine = new Chart(ctx9, config2);
+			
+			
 
 		};
+		
+		function ValidateIPaddress(ipaddress) {
+            if (/^([a-z0-9]([-a-z0-9]*[a-z0-9])?\\.)+((a[cdefgilmnoqrstuwxz]|aero|arpa)|(b[abdefghijmnorstvwyz]|biz)|(c[acdfghiklmnorsuvxyz]|cat|com|coop)|d[ejkmoz]|(e[ceghrstu]|edu)|f[ijkmor]|(g[abdefghilmnpqrstuwy]|gov)|h[kmnrtu]|(i[delmnoqrst]|info|int)|(j[emop]|jobs)|k[eghimnprwyz]|l[abcikrstuvy]|(m[acdghklmnopqrstuvwxyz]|mil|mobi|museum)|(n[acefgilopruz]|name|net)|(om|org)|(p[aefghklmnrstwy]|pro)|qa|r[eouw]|s[abcdeghijklmnortvyz]|(t[cdfghjklmnoprtvwz]|travel)|u[agkmsyz]|v[aceginu]|w[fs]|y[etu]|z[amw])$/.test(ipaddress)){
+                return (true)
+            }
+            return (false)
+        }
+		
+		function CheckIsValidDomain(domain) { 
+            var re = new RegExp(/^((?:(?:(?:\w[\.\-\+]?)*)\w)+)((?:(?:(?:\w[\.\-\+]?){0,62})\w)+)\.(\w{2,6})$/); 
+            return domain.match(re);
+        }
+		$(document).ready(function() {
+		   $('#scan').click(function() { start_scan(); });
+		   
+		    function start_scan() {
+		        scan_target = $("#scan_target").val()
+
+		        if(!scan_target){
+		            alert("Please enter IP/Domain");
+		            return;
+		        }
+		        if(!ValidateIPaddress(scan_target) && !CheckIsValidDomain(scan_target)){
+		            alert("Please enter correct IP/Domain");
+		            return;
+		        }
+		        $('#scan').attr("disabled", "disabled");
+                $.get("/api/v2/scan-start/?scan_target="+scan_target, function (data) {
+                    if (data.status && data.uid) {
+                        // Show we are working message
+                        //alert("start")
+                        $("#scan_report").html('<div class="loader_text">We are working on your request</div><div class="loader"></div>')
+                        
+                        get_scan_report(data.uid)   
+                    }else{
+                        $('#scan').removeAttr("disabled");
+                    }
+                });
+            }
+            
+            function get_scan_report(uid){
+                $.get("/api/v2/scan-report/?uid="+uid, function (data) {
+                    if (data.complete) {
+                        //show report in div
+                        //alert("Complete")
+                        //alert(data.data)
+                        $("#scan_report").html(data.data)
+                        $('#scan').removeAttr("disabled");
+                    }else{
+                     setTimeout(function() { get_scan_report(uid);}, 4000)
+                    }
+                });
+            
+            }
+		});
 	</script>
 
     <script>

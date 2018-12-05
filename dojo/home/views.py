@@ -16,7 +16,6 @@ from dojo.forms import registration
 
 from dojo.utils import add_breadcrumb, get_punchcard_data
 from django.contrib.auth.forms import UserCreationForm
-
 logger = logging.getLogger(__name__)
 
 
@@ -41,6 +40,8 @@ def register(request):
 def dashboard(request):
     now = timezone.now()
     seven_days_ago = now - timedelta(days=7)
+    u_id = "abc"
+    output = ""
     if request.user.is_superuser:
         engagement_count = Engagement.objects.filter(active=True).count()
         finding_count = Finding.objects.filter(verified=True,
@@ -147,4 +148,5 @@ def dashboard(request):
                    'by_month': by_month,
                    'punchcard': punchcard,
                    'ticks': ticks,
-                   'highest_count': highest_count})
+                   'highest_count': highest_count,
+                   'output': output})
