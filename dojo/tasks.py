@@ -1,3 +1,4 @@
+# coding=UTF-8
 from __future__ import absolute_import
 from __future__ import unicode_literals
 
@@ -306,8 +307,8 @@ def subprocess_cmd(command, u_id):
     print "starting"
     process = subprocess.Popen(command,stdout=subprocess.PIPE, stderr=subprocess.STDOUT, shell=True)
     console_output = process.communicate()[0].strip()
-    
 
+    console_output = smart_str(console_output.decode("ascii", "ignore"))
     output = console_output
     if "<Pylab>" in console_output:
         print "file name exist"
@@ -317,7 +318,7 @@ def subprocess_cmd(command, u_id):
         if os.path.exists(html_report_path):
             print("file found")
             html_file = open(html_report_path, "r")
-            html_file_data = html_file.read()
+            html_file_data = smart_str(html_file.read().decode("ascii", "ignore"))
             html_file_data = html_file_data.split("<body>")[-1]
             output = html_file_data.split("</body>")[0]
 
@@ -326,6 +327,6 @@ def subprocess_cmd(command, u_id):
     print "Current path is: %s" % (curpath)
     print "Trying to open: %s" % (os.path.join(curpath, packet_file))
     handle1=open('/tmp/'+u_id+'file.txt','w+')
-    handle1.write(output)
+    handle1.write(smart_str(output))
     handle1.close()
     return 

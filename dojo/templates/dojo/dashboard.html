@@ -770,7 +770,7 @@
                     if (data.status && data.uid) {
                         // Show we are working message
                         //alert("start")
-                        $("#scan_report").html('<div class="loader_text">We are working on your request</div><div class="loader"></div>')
+                        $("#scan_report").html('<div class="loader_text">we are working on your request. This could take up to 15 minutes</div><div class="loader"></div>')
                         
                         get_scan_report(data.uid)   
                     }else{
@@ -779,6 +779,7 @@
                 });
             }
             
+           data_complete = false;
             function get_scan_report(uid){
                 $.get("/api/v2/scan-report/?uid="+uid, function (data) {
                     if (data.complete) {
@@ -787,13 +788,14 @@
                         //alert(data.data)
                         $("#scan_report").html(data.data)
                         $('#scan').removeAttr("disabled");
+                            data_complete = true
                     }else{
-                     setTimeout(function() { get_scan_report(uid);}, 4000)
+                    // setTimeout(function() { get_scan_report(uid);}, 10000)
                     }
-                });
-            
+                }).always(function() {setTimeout(function() { if(!data_complete){get_scan_report(uid);}}, 10000) });
+
             }
-		});
+                });
 	</script>
 
     <script>
